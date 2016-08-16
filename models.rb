@@ -5,7 +5,10 @@ require 'active_record'
 # use Rack::Flash
 
 ActiveRecord::Base.logger = Logger.new(STDOUT)
-ActiveRecord::Base.establish_connection(
+if ENV["DATABASE_URL"]
+  #Production
+  ActiveRecord::Base.establish_connection(ENV["DATABASE_URL"])
+else ActiveRecord::Base.establish_connection(
   adapter:  "postgresql",
   database: "tiyglossary_development"
 )

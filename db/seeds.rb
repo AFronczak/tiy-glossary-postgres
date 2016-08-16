@@ -1,6 +1,6 @@
 require_relative '../models'
-Categories.create(name: "JavaScript", subject: "Front-End Engineering")
-Categories.create(name: "Ruby on Rails", subject: "Back-End Engineering")
+Category.create(name: "JavaScript", subject: "Front-End Engineering")
+Category.create(name: "Ruby on Rails", subject: "Back-End Engineering")
 
 Terms.create(name: "Array", definition: "You can get elements out of arrays if you know their index. Array elements'' indexes start at 0 and increment by 1, so the first element''s index is 0, the second element''s index is 1, the third element''s is 2, etc.",
             author: "Codecademy", web_link: "https://www.codecademy.com/articles/glossary-javascript", category_id: 1)
