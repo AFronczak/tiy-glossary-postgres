@@ -12,7 +12,7 @@ else ActiveRecord::Base.establish_connection(
   adapter:  "postgresql",
   database: "tiyglossary_development"
 )
-
+end
 class Category < ActiveRecord::Base
   has_many :terms
 end
