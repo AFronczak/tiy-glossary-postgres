@@ -1,0 +1,40 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+label {
+  style: inline-block;
+}
+.header-wrap {
+  height: 100px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #202F37;
+  color: :#59606A;
+}
+.nav-bar {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.link a {
+  color: #6fbbb7;
+}
+h1, h2 {
+  color: #202F37;
+}
+
+.grey {
+  color:#59606A;
+}
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.center {
+  text-align: center;
+}

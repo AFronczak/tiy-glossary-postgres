@@ -1,0 +1,20 @@
+%h1 Edit term
+%form(action="/terms/#{@term.id}" method="post")
+  %input(name="_method" value="put" type="hidden")
+  %ul
+    %li
+      %label(for="name")
+      %input(type="text" name= "term[name]" value="#{@term.name}")
+    %li
+      %label(for="definition")
+      %input(type="text" name= "term[definition]" value="#{@term.definition}")
+    %li
+      %label(for="author")
+      %input(type="text" name= "term[author]" value="#{@term.author}")
+    %li
+      %label(for="web_link")
+      %input(type="text" name= "term[web_link]" value="#{@term.web_link}")
+    %li
+      %label(for="category_id")
+      %input(type="text" name= "term[category_id]" value="#{@term.category_id}")
+  %input(type="submit")

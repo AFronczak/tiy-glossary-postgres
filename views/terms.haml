@@ -1,0 +1,5 @@
+%ul
+  -@terms.each do |term|
+    %li
+      %a(href = "/terms/#{term.id}")
+        =term.name
